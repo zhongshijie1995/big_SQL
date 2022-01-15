@@ -1,3 +1,7 @@
+-- 查询数据库
+show databases ;
+-- 查询用户
+select * from mysql.user;
 -- 创建用户
 create user 'big_sql'@'%' identified by 'big_sql';
 create schema big_sql default character set utf8mb4 collate utf8mb4_general_ci;
