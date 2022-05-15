@@ -1,6 +1,8 @@
+/* 192.168.0.101:1521  system  zhongshijie */
+
 -- 创建表空间
 create tablespace big_oracle
-    datafile 'C:\Users\zhongshijie\Desktop\DataSpace\big_oracle.dbf'
+    datafile 'D:\\big_oracle.dbf'
     size 128M AUTOEXTEND ON ;
 -- 创建用户
 create user big_oracle identified by big_oracle default tablespace big_oracle ;

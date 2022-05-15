@@ -1,3 +1,5 @@
+/* 192.168.0.101:3306  root  zhongshijie */
+
 -- 查询数据库
 show databases ;
 -- 查询用户
@@ -22,7 +24,6 @@ flush privileges;
 -- 删除用户
 drop user big_boot_prod;
 drop schema big_boot_prod;
-
 
 /* 创建 big_api_test */
 -- 创建用户
