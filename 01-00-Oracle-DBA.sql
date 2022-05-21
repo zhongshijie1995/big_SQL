@@ -44,6 +44,8 @@ create public database link big_test_a connect to big_test_a identified by big_t
     '(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=127.0.0.1)(PORT=1521)))(CONNECT_DATA=(SERVICE_NAME=orcl)))';
 create public database link big_test_b connect to big_test_b identified by big_test_b using
     '(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=127.0.0.1)(PORT=1521)))(CONNECT_DATA=(SERVICE_NAME=orcl)))';
+-- 查询数据库连接
+select * from dba_db_links;
 -- 删除数据库连接
 drop public database link big_test_a;
 drop public database link big_test_b;
