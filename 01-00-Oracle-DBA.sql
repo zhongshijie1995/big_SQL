@@ -10,7 +10,7 @@ create user big_test_a identified by big_test_a default tablespace big_test_a ;
 grant connect, resource, create any view to big_test_a;
 -- 赋予用户表空间权限
 alter user big_test_a quota unlimited on big_test_a;
--- 赋予DBLink的全新
+-- 赋予DBLink的权限
 grant create public database link to big_test_a;
 /* ------------------- 删除 ------------------- */
 -- 删除用户
@@ -30,7 +30,7 @@ create user big_test_b identified by big_test_b default tablespace big_test_b ;
 grant connect, resource, create any view to big_test_b;
 -- 赋予用户表空间权限
 alter user big_test_b quota unlimited on big_test_b;
--- 赋予DBLink的全新
+-- 赋予DBLink的权限
 grant create public database link to big_test_b;
 /* ------------------- 删除 ------------------- */
 -- 删除用户
