@@ -44,3 +44,13 @@ flush privileges;
 -- 删除用户
 drop user big_api_prod;
 drop schema big_api_prod;
+
+/* 创建 big_trade */
+-- 创建用户
+create user 'big_trade'@'%' identified by 'big_trade';
+create schema big_trade default character set utf8mb4 collate utf8mb4_general_ci;
+grant all on big_trade.* to big_trade;
+flush privileges;
+-- 删除用户
+drop user big_trade;
+drop schema big_trade;
